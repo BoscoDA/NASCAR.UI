@@ -12,7 +12,21 @@
         }"
     (click)="NextCard()"
   >
-    <img id="flag-icon" src="../../../../assets/img/trivia/level-1-flag.svg" />
+    <img
+      id="flag-icon"
+      src="../../../../assets/img/trivia/level-1-flag.svg"
+      *ngIf="difficulty === 1"
+    />
+    <img
+      id="flag-icon"
+      src="../../../../assets/img/trivia/level-2-flag.svg"
+      *ngIf="difficulty === 2"
+    />
+    <img
+      id="flag-icon"
+      src="../../../../assets/img/trivia/level-3-flag.svg"
+      *ngIf="difficulty === 3"
+    />
     <div id="end-round" *ngIf="card1 === 1">
       <div>
         <h1>LEVEL {{ difficulty }}</h1>
