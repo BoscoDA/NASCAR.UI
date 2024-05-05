@@ -33,6 +33,6 @@ export class LeaderboardService {
   }
 
   public GetNascarDrivers(){
-    return this.http.get<any>("assets/nascar-drivers.json");
+    return this.http.get<any>("../../assets/nascar-drivers.json");
   }
 }
