@@ -27,23 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //
 
-const approachButtons = document.querySelectorAll('.approachButton');
+const approachButtons = document.querySelectorAll('.researchButton');
 
 approachButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const targetId = button.getAttribute('data-target');
-        const targetSection = document.getElementById('approachSection');
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
-//
-
-const researchButtons = document.querySelectorAll('.researchButton');
-
-researchButtons.forEach(button => {
     button.addEventListener('click', () => {
         const targetId = button.getAttribute('data-target');
         const targetSection = document.getElementById('researchSection');
@@ -55,12 +41,26 @@ researchButtons.forEach(button => {
 
 //
 
-const personButtons = document.querySelectorAll('.personButton');
+const researchButtons = document.querySelectorAll('.triviaButton');
+
+researchButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const targetSection = document.getElementById('triviaSection');
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+//
+
+const personButtons = document.querySelectorAll('.reactionButton');
 
 personButtons.forEach(button => {
     button.addEventListener('click', () => {
         const targetId = button.getAttribute('data-target');
-        const targetSection = document.getElementById('personSection');
+        const targetSection = document.getElementById('reactionSection');
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
@@ -69,12 +69,12 @@ personButtons.forEach(button => {
 
 //
 
-const interviewButtons = document.querySelectorAll('.interviewButton');
+const interviewButtons = document.querySelectorAll('.bookButton');
 
 interviewButtons.forEach(button => {
     button.addEventListener('click', () => {
         const targetId = button.getAttribute('data-target');
-        const targetSection = document.getElementById('interviewSection');
+        const targetSection = document.getElementById('bookSection');
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
@@ -83,12 +83,12 @@ interviewButtons.forEach(button => {
 
 //
 
-const processButtons = document.querySelectorAll('.processButton');
+const processButtons = document.querySelectorAll('.webButton');
 
 processButtons.forEach(button => {
     button.addEventListener('click', () => {
         const targetId = button.getAttribute('data-target');
-        const targetSection = document.getElementById('processSection');
+        const targetSection = document.getElementById('webSection');
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
@@ -97,15 +97,5 @@ processButtons.forEach(button => {
 
 //
 
-const finalButtons = document.querySelectorAll('.finalButton');
 
-finalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const targetId = button.getAttribute('data-target');
-        const targetSection = document.getElementById('finalSection');
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
 });

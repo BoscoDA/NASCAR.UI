@@ -14,6 +14,7 @@ html {
         justify-content: center;
         width: 100%;
         height: 200px;
+        margin: auto;
 }
 
 .ProcessNav:hover {
@@ -36,17 +37,45 @@ html {
 }
 
 #tall {
-    width: 180px;
+    width: 230px;
+}
+
+#tallReaction {
+    width: 220px;
+}
+
+#tallOver {
+    width: 150px;
+}
+
+#tallWeb {
+    width: 160px;
+}
+
+#tallBook {
+    width: 200px;
 }
 
 hr {
-    z-index: -1;
     position: absolute;
-    width: 80%;
+    z-index: -1;
+    width: 1000px;
     height: 2px;
     border: none;
     border-bottom: 2px solid #ffffff;
 
+}
+
+#basicHr {
+    z-index: -1;
+    position: relative;
+    height: 2px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 
 .MainContent {
@@ -99,8 +128,14 @@ hr {
      /* Assuming each image takes 1/3 width */
     margin: 0;
     color: white;
+    filter: saturate(0);
+    mix-blend-mode: hard-light;
 }
 
+#invert {
+    filter: invert(100);
+    padding-top: 0;
+}
 
 .RedSkewContainer img {
     width: 92%; /* Ensure the image fills its container */
@@ -185,6 +220,7 @@ hr {
     display: flex;
   justify-content: center; /* Center the image container horizontally */
   padding: 50px 60px;
+  
     
 }
 
@@ -442,6 +478,7 @@ hr {
     padding-bottom: 50px;
     padding-left: 60px;
     padding-right: 60px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -665,18 +702,32 @@ width: 60%;
 
 @media only screen and (max-width: 768px) {
 
+    
     .DesktopContent {
         display: none;
     }
 
-    
-
-
   }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+   
+    hr {
+       width: 100%;
+    }
+
+    #overviewSection {
+       justify-content: flex-start;
+    }
+
+    .MobileContent {
+        display: none;
+    }
+}
 
   @media only screen and (min-width: 1024px) {
     /* Your CSS rules to hide content at desktop views here */
     .MobileContent {
         display: none;
     }
+   
   }
