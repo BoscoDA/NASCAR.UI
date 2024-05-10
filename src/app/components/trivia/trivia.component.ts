@@ -15,6 +15,7 @@ export class TriviaComponent implements OnInit{
   triviaCompleted: Boolean = false;
   questionDisplay: Boolean = false;
   answerDisplay: Boolean = false;
+  confetti: Boolean = false;
 
   difficulty: number = 0;
   questionNum: number = 0;
@@ -98,9 +99,17 @@ export class TriviaComponent implements OnInit{
       this.completedRound3 = true;
       this.scoreRound3 = $event.score;
       this.questions = $event.questions;
+      
     }
     this.score = $event.score;
     this.triviaCompleted = true;
+  }
+
+  EndConfetti(){
+    this.confetti = true;
+    setTimeout(()=>{
+      this.confetti = false;
+    }, 1300)
   }
 
   ResetQuiz(){
@@ -126,6 +135,11 @@ export class TriviaComponent implements OnInit{
     this.score = 0;
     this.difficulty = 0;
     this.timer = 2;
+
+    if(this.completedRound3 == true){
+      console.log('confetti');
+      this.EndConfetti();
+    }
   }
 
   Home(){

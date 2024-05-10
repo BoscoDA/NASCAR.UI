@@ -36,7 +36,7 @@
 .ImageContainer
 {
     position: relative; /* Relative positioning for absolute positioning within */
-    width: 25%; /* Assuming each image takes 1/3 width */
+    width: 32%; /* Assuming each image takes 1/3 width */
     margin: 0;
     
 }

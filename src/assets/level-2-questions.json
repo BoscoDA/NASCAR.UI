@@ -97,7 +97,7 @@
         "explanation": "Blaney won the NASCAR Cup Series championship in 2023, which was also his first national series title."
         },
         {
-            "questionText": "Which car manufacturer is NOT involved with NASCAR?",
+            "questionText": "Which car manufacturer is currently NOT competing in the NASCAR Cup Series?",
             "short": true,
             "options": [{
                 "text": "Dodge",

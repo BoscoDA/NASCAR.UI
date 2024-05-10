@@ -6,6 +6,11 @@
     ></app-trivia-menu>
 
     <div id="level-select" *ngIf="levelSelect || menu">
+      <img
+        id="confetti"
+        *ngIf="completedRound3 && confetti"
+        src="../../../../assets/img/trivia/confetti.gif"
+      />
       <svg id="home-button">
         <g class="button" (click)="Home()">
           <rect
