@@ -641,6 +641,7 @@ width: 60%;
     position: relative; /* Relative positioning for absolute positioning within */
     width: 100%;
     margin: 0;
+    padding-top: 20px;
 }
 
 .MobileText {
@@ -650,11 +651,19 @@ width: 60%;
     padding-right: 100px;
 }
 
+.HrMobile {
+    width: 87%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: unset;
+    margin: auto;
+
+}
+
 .CenterImg {
     display: flex;
   justify-content: center; /* Center the image container horizontally */
-  padding: 25px;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .CenterImg img{
@@ -699,6 +708,14 @@ width: 60%;
     
 }
 
+#SmallImgFix {
+    margin-left: 10px;
+}
+
+ul {
+    padding-left: 85px;
+    padding-right: 0;
+}
 
 @media only screen and (max-width: 768px) {
 
